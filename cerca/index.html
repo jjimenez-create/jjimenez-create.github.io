@@ -2,193 +2,213 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8">
-  <title>Comparació de la mandarina ecològica i convencional</title>
- 
-  <!-- Importar la font Comfortaa de Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparació de la mandarina convencional i ecològica</title>
   <style>
-    /* Comfortaa com a font predeterminada per a tota la pàgina */
     body {
-      font-family: 'Comfortaa', sans-serif;
-      text-align: justify; /* Justificar tot el text */
-      transition: background-color 0.5s, color 0.5s;
-    }
-
-    /* Botó mode clar/fosc discreto a la cantonada superior dreta */
-    #themeToggle {
-      position: fixed;
-      top: 5px;
-      right: 5px;
-      border: none;
-      background: transparent;
-      font-size: 1.5rem;
-      color: inherit;
-      z-index: 9999;
-      cursor: pointer;
-    }
-
-    /* Mode fosc */
-    body[data-bs-theme="dark"] {
-      background-color: #121212;
-      color: #f1f1f1;
-    }
-
-    body[data-bs-theme="dark"] a {
-      color: #bb86fc;
-    }
-
-    body[data-bs-theme="dark"] ul li {
-      color: #f1f1f1;
-    }
-
-    body[data-bs-theme="dark"] img {
-      filter: brightness(0.9);
-    }
-
-    /* Estil personalitzat per a la línia divisòria */
-    hr {
-      border: 0;
-      height: 2px;
-      background: linear-gradient(to right, #ccc, #666, #ccc);
-      margin: 30px 0;
-      border-radius: 2px;
-    }
-
-    /* Línia verda centrada amb animació */
-    .green-line {
-      background: green;
-      height: 3px;
-      border: none;
-      border-radius: 2px;
-      width: 100%;
-      margin: 20px auto;
-      transition: width 0.5s;
-    }
-    .green-line:hover {
-      width: 80%;
-    }
-    .green-text {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
       text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffb347;
+      padding: 30px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #fff;
+    }
+
+    section {
+      margin: 40px auto;
+      width: 90%;
+      max-width: 1000px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    h2 {
+      color: #ff8c00;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .article, .response {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    img {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
       margin-top: 10px;
     }
 
-    /* 🔹 Només canvia la mida de "Article 1" */
-    .article-title {
-      font-size: 1.5em; /* lleugerament més gran */
-      text-align: center;
-      margin-bottom: 10px;
+    p {
+      text-align: justify;
+      margin: 10px auto;
+      width: 90%;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ffb347;
+      color: white;
+      font-weight: bold;
     }
   </style>
 </head>
-<body data-bs-theme="light">
+<body>
+  <header>
+    <h1>Comparació de la mandarina convencional i ecològica</h1>
+  </header>
 
-  <!-- Botó mode clar/fosc -->
-  <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+  <section id="articles">
+    <h2>Articles</h2>
 
-  <h1><u>Comparem mandarines ecològiques i convencionals: quina té més nutrients segons la ciència i segons la IA?</u></h1>
-  <hr>
+    <!-- Apartats d'articles (10 en total) -->
+    <div class="article">
+      <h3>Article 1 - Nom de l'autor</h3>
+      <img src="Captura1taula.png.png" alt="Imatge de l'article 1">
+      <p>Aquí pots escriure l'explicació de l'article 1.</p>
+    </div>
 
-  <p>He trobat diferents articles científics que estudien el meu tema i els trobareu a continuació en format APA7. APA7 és una forma d'escriure un article científic.</p>
+    <div class="article">
+      <h3>Article 2 - Nom de l'autor</h3>
+      <img src="imatge2.jpg" alt="Imatge de l'article 2">
+      <p>Aquí pots escriure l'explicació de l'article 2.</p>
+    </div>
 
-  <!-- Nova secció d'autors i article millorada -->
-  <p class="article-title"><b>Article 1</b></p>
-  <p><strong>Autors:</strong></p>
-  <ul>
-    <li>P. Navarro</li>
-    <li>A.J. Pérez-López</li>
-    <li>M.T. Mercader</li>
-    <li> A.A. Carbonell-Barrachina</li>
-    <li>J.A. Gabaldon</li>
-    <li></li>
-  </ul>
+    <div class="article">
+      <h3>Article 3 - Nom de l'autor</h3>
+      <img src="imatge3.jpg" alt="Imatge de l'article 3">
+      <p>Aquí pots escriure l'explicació de l'article 3.</p>
+    </div>
 
-  <p><strong>Article:</strong></p>
-  <ul>
-    <li>Antioxidant Activity, Color, Carotenoids Composition, Minerals, Vitamin C and Sensory Quality of Organic and Conventional Mandarin Juice, cv. Orogrande
-     <li>pag.9
-       <li>vol.17: 241
-         <li>(2011)</li>
-    <li>Sempre posem primer els autors pel cognom i les inicials del nom, després l'any entre parèntesis, el títol, després el nom de la revista abreujat, el volum i les pàgines que té.</li>
-  </ul>
+    <div class="article">
+      <h3>Article 4 - Nom de l'autor</h3>
+      <img src="imatge4.jpg" alt="Imatge de l'article 4">
+      <p>Aquí pots escriure l'explicació de l'article 4.</p>
+    </div>
 
-  <hr>
+    <div class="article">
+      <h3>Article 5 - Nom de l'autor</h3>
+      <img src="imatge5.jpg" alt="Imatge de l'article 5">
+      <p>Aquí pots escriure l'explicació de l'article 5.</p>
+    </div>
 
-  <!-- 🔹 Aquí s’aplica la classe que augmenta la mida -->
-  <img src="Captura1taula.png.png">
-  <ul>
-    <hr>
-    <li>La taula explica els tipus de cultius que s'apliquen a les mandarines ecològiques i les convencionals per després veure'n les diferències quan es fan en suc. Veus que hi ha la diferència de quantitats de vitamina C (convencionals:  366±18 b) (ecològiques: 419±25 a) també en el pes, el diàmetre, contingut de sòlids solubles, àcid cítric, vitamina C i l’activitat antioxidant.
-</li>
-  </ul>
-  <hr>
-  <p class="article-title"><b>Article 2</b></p>
-  <p><strong>Autors:</strong></p>
-  <ul>
-    <li>Srednicka-Tober D.</li>
-    <li>Kopczyńska K.</li>
-    <li>Góralska-Walczak R.</li>
-    <li>Hallmann E.</li>
-    <li>Barański M.</li>
-  </ul>
+    <div class="article">
+      <h3>Article 6 - Nom de l'autor</h3>
+      <img src="imatge6.jpg" alt="Imatge de l'article 6">
+      <p>Aquí pots escriure l'explicació de l'article 6.</p>
+    </div>
 
-  <p><strong>Article:</strong></p>
-  <ul>
-    <li>Are Organic Certified Carrots Richer in Health-Promoting Phenolics and Carotenoids than the Conventionally Grown Ones?
-     <li>pag.11
-       <li>vol.27
-         <li>(2022)</li>
-  <hr>
-  <img src="Captura de pantalla.png2" alt="Figura 5">
-    <hr>
-    <li>cv. Flacoro cv. I cv. Nantejska: són dues varietats de pastanagues que es cultiven d'una manera o una altra i ANOVA: és un mètode estadístic que compara distintes menes de pastanagues </li>
-    <li>Per a aquesta anàlisi he usat la varietat Nantejska com a referència. Les pastanagues convencionals tenen 9,35 ± 2,27 mg/g de polifenols i 13,1 ± 0,8% de matèria seca, mentre que les orgàniques presenten 9,75 ± 3,21 mg/g de polifenols i 13,9 ± 1,5% de matèria seca, mostrant només diferències minimes.</li>
-  <hr>
-     <p class="article-title"><b>Article 3</b></p>
- <p><strong>Autors:</strong></p>
-   
-  <li>P.R. Warman</li>
-  <li>K.A. Havard</li>
-   
-<p><strong>Article:</strong></p>
-   
-  <li>Are Organic Certified Carrots Richer in Health-Promoting Phenolics and Carotenoids than the Conventionally Grown Ones?</li>
-  <li>pag. 8</li>
-  <li>vol. 61, 155-162</li>
-  <li>(1996)</li>
-     <hr>
-  <img src="Captura de pantalla.png3" alt="Figura 5">
-    <hr>
-    <li>N: Nitrogen
-P: Fòsfor  K: Potassi  Ca: Calci  Mg: Magnesi  S: Sofre</li>
-    <li>A la mitjana dels tres anys, les pastanagues convencionals presentaven més nitrogen, manganès i coure, mentre que les orgàniques mostraven més bor i sodi, evidenciant diferències clares entre ambdós tipus de cultiu. </li>
-  <hr>
-  <p>A continuació posare les respostes donades per ChatGPT</p>
+    <div class="article">
+      <h3>Article 7 - Nom de l'autor</h3>
+      <img src="imatge7.jpg" alt="Imatge de l'article 7">
+      <p>Aquí pots escriure l'explicació de l'article 7.</p>
+    </div>
 
-  <!-- Línia verda centrada amb text i animació -->
-  <hr class="green-line">
-  <h2 class="green-text"><strong>Chat GPT</strong></h2>
-<hr class="green-line">
-  <!-- Font Awesome per les icones -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+    <div class="article">
+      <h3>Article 8 - Nom de l'autor</h3>
+      <img src="imatge8.jpg" alt="Imatge de l'article 8">
+      <p>Aquí pots escriure l'explicació de l'article 8.</p>
+    </div>
 
-  <script>
-    // Mode clar/fosc amb canvi d'icona
-    const themeToggle = document.getElementById('themeToggle');
-    const themeIcon = themeToggle.querySelector('i');
+    <div class="article">
+      <h3>Article 9 - Nom de l'autor</h3>
+      <img src="imatge9.jpg" alt="Imatge de l'article 9">
+      <p>Aquí pots escriure l'explicació de l'article 9.</p>
+    </div>
 
-    themeToggle.addEventListener('click', () => {
-      if (document.body.getAttribute('data-bs-theme') === 'dark') {
-        document.body.setAttribute('data-bs-theme', 'light');
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-      } else {
-        document.body.setAttribute('data-bs-theme', 'dark');
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-      }
-    });
-  </script>
+    <div class="article">
+      <h3>Article 10 - Nom de l'autor</h3>
+      <img src="imatge10.jpg" alt="Imatge de l'article 10">
+      <p>Aquí pots escriure l'explicació de l'article 10.</p>
+    </div>
+  </section>
 
+  <section id="respostes">
+    <h2>Respostes de Chat GPT</h2>
+
+    <!-- Apartats de respostes (10 en total) -->
+    <div class="response">
+      <h3>Resposta 1</h3>
+      <img src="resposta1.jpg" alt="Imatge de la resposta 1">
+      <p>Aquí pots escriure l'explicació de la resposta 1.</p>
+    </div>
+
+    <div class="response">
+      <h3>Resposta 2</h3>
+      <img src="resposta2.jpg" alt="Imatge de la resposta 2">
+      <p>Aquí pots escriure l'explicació de la resposta 2.</p>
+    </div>
+
+    <div class="response">
+      <h3>Resposta 3</h3>
+      <img src="resposta3.jpg" alt="Imatge de la resposta 3">
+      <p>Aquí pots escriure l'explicació de la resposta 3.</p>
+    </div>
+
+    <div class="response">
+      <h3>Resposta 4</h3>
+      <img src="resposta4.jpg" alt="Imatge de la resposta 4">
+      <p>Aquí pots escriure l'explicació de la resposta 4.</p>
+    </div>
+
+    <div class="response">
+      <h3>Resposta 5</h3>
+      <img src="resposta5.jpg" alt="Imatge de la resposta 5">
+      <p>Aquí pots escriure l'explicació de la resposta 5.</p>
+    </div>
+
+    <div class="response">
+      <h3>Resposta 6</h3>
+      <img src="resposta6.jpg" alt="Imatge de la resposta 6">
+      <p>Aquí pots escriure l'explicació de la resposta 6.</p>
+    </div>
+
+    <div class="response">
+      <h3>Resposta 7</h3>
+      <img src="resposta7.jpg" alt="Imatge de la resposta 7">
+      <p>Aquí pots escriure l'explicació de la resposta 7.</p>
+    </div>
+
+    <div class="response">
+      <h3>Resposta 8</h3>
+      <img src="resposta8.jpg" alt="Imatge de la resposta 8">
+      <p>Aquí pots escriure l'explicació de la resposta 8.</p>
+    </div>
+
+    <div class="response">
+      <h3>Resposta 9</h3>
+      <img src="resposta9.jpg" alt="Imatge de la resposta 9">
+      <p>Aquí pots escriure l'explicació de la resposta 9.</p>
+    </div>
+
+    <div class="response">
+      <h3>Resposta 10</h3>
+      <img src="resposta10.jpg" alt="Imatge de la resposta 10">
+      <p>Aquí pots escriure l'explicació de la resposta 10.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Comparació de la mandarina convencional i ecològica
+  </footer>
 </body>
 </html>
