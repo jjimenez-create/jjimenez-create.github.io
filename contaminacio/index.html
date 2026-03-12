@@ -126,6 +126,148 @@
 <li>
   Respiratory infection data are collected from the <a href="https://salutpublica.gencat.cat/ca/ambits/vigilancia/sivic/">Information System for Infection Surveillance in Catalonia (SIVIC)</a> using data from region 75, which is the Barcelona Metropolitan South region; 265 is the Primary Care Centre from Viladecans. 
 </li>
+
+      <!-- Sección detallada del estudio -->
+<section class="container py-4">
+
+  <!-- 1. Area of study -->
+  <h2 class="mb-3">1. Area of study</h2>
+
+  <p>
+    For this project, each group was assigned a different locality within Catalonia. 
+    Our group's study focuses on <b>El Prat (Jardins de la Pau)</b>, located in the 
+    Barcelona Metropolitan South area, region 75 of the SIVIC data.
+  </p>
+
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <img src="mapa-elprat.png" class="img-fluid rounded shadow-sm">
+    </div>
+    <div class="col-md-6">
+      <img src="mapa-elprat2.png" class="img-fluid rounded shadow-sm">
+    </div>
+  </div>
+
+  <p>
+    El Prat de Llobregat is a city of approximately 66,000 inhabitants, located in the 
+    Baix Llobregat region and part of the Barcelona Metropolitan Area. Its strategic 
+    location is only 2–3 km from Barcelona–El Prat Airport, which implies a significant 
+    influence of air traffic on air quality. The city is also connected by highways, 
+    trains, and metro, acting as a logistics and industrial corridor with nearby 
+    industrial areas and port and railway activities.
+  </p>
+
+  <p>
+    All of this, together with heavy urban traffic, constitutes the main sources of 
+    air pollution that may affect the respiratory health of the population.
+  </p>
+
+  <!-- 2. Data sources -->
+  <h2 class="mt-5 mb-3">2. Data sources</h2>
+
+  <ul>
+    <li>
+      <b>SIVIC (Health data):</b> The 
+      <a href="https://salutpublica.gencat.cat/ca/ambits/vigilancia/sivic/" target="_blank">
+      Information System for Infection Surveillance in Catalonia (SIVIC)
+      </a> 
+      is a surveillance system created by the Catalan Public Health Agency to monitor respiratory infections such as Covid‑19, influenza, respiratory syncytial virus, and enteroviruses. 
+      It integrates data collected from primary care centres, hospitals, laboratories and public health services, allowing real‑time analysis of acute respiratory infections to detect trends and provide early alerts.
+    </li>
+
+    <li>
+      <b>XEMA (Meteorological data):</b> The Network of Automatic Meteorological 
+      Stations managed by Meteocat includes more than 180 stations measuring 
+      temperature, precipitation, wind, humidity, and pressure in real time.
+    </li>
+
+    <li>
+      <b>XPVCA (Air pollution data):</b> Catalonia’s official air quality monitoring 
+      network that provides real-time pollutant data to study air quality trends 
+      and environmental health impacts.
+    </li>
+  </ul>
+
+  <!-- 3. Methodology -->
+  <h2 class="mt-5 mb-3">3. Methodology</h2>
+
+  <p>
+    To manipulate and analyze the downloaded data, we used <b>RStudio</b>, an 
+    integrated development environment for the R programming language focused on 
+    statistical computing and graphics.
+  </p>
+
+  <p>
+    We used libraries such as <b>Openair</b> and <b>Tidyverse</b> to clean, organize, 
+    and analyze the data, producing graphs and tables like the following:
+  </p>
+
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <img src="archivos-rstudio.png" class="img-fluid rounded shadow-sm">
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <img src="tabla-R1.png" class="img-fluid rounded shadow-sm">
+    </div>
+    <div class="col-md-4">
+      <img src="tabla-R2.png" class="img-fluid rounded shadow-sm">
+    </div>
+    <div class="col-md-4">
+      <img src="tabla-R3.png" class="img-fluid rounded shadow-sm">
+    </div>
+  </div>
+
+  <!-- 4. Results -->
+  <h2 class="mt-5 mb-3">4. Results</h2>
+
+  <ul>
+    <li>
+      <b>NO<sub>2</sub>:</b> European legislation establishes that nitrogen dioxide 
+      should not exceed <b>200 µg/m³ more than 18 times per year</b>.  
+      In our analysis (2009–2025), we observed <b>0 exceedances</b> of this hourly 
+      limit. However, the annual limit was exceeded in <b>2 of the 16 years</b> 
+      analyzed (12.5% of the period).
+    </li>
+  </ul>
+
+  <!-- 5. Discussion -->
+  <h2 class="mt-5 mb-3">5. Discussion</h2>
+
+  <h5>Most influential pollutants</h5>
+  <p>
+    The most relevant pollutant is nitrogen dioxide (NO<sub>2</sub>). It is the 
+    only pollutant exceeding the annual limit in some years and shows frequent 
+    daily peaks related to traffic and urban activity. Ozone (O<sub>3</sub>) and 
+    sulfur dioxide (SO<sub>2</sub>) do not show significant exceedances.
+  </p>
+
+  <h5>Meteorological conditions affecting pollution</h5>
+  <p>
+    Solar radiation favors ozone formation, especially during midday. Wind helps 
+    disperse pollutants, while calm conditions favor accumulation. During winter, 
+    thermal inversions may trap pollutants near the ground, increasing NO<sub>2</sub>.
+  </p>
+
+  <h5>Seasonal patterns</h5>
+  <p>
+    NO<sub>2</sub> concentrations show two daily peaks coinciding with rush hours. 
+    Levels are usually higher on weekdays than weekends. Seasonally, NO<sub>2</sub> 
+    increases in winter, while ozone levels are higher in summer due to stronger 
+    solar radiation.
+  </p>
+
+  <h5>Public health implications</h5>
+  <p>
+    Even when legal limits are generally met, NO<sub>2</sub> exposure may still 
+    affect health. It is associated with respiratory irritation, asthma 
+    aggravation, and other respiratory problems, especially in vulnerable 
+    populations such as children, the elderly, and people with chronic diseases.
+  </p>
+
+</section>
       
     </ul>
   </main>
