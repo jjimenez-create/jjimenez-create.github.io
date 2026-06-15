@@ -1,0 +1,62 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    touch-action: none;
+}
+#game-container {
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    aspect-ratio: 480 / 700;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+    background: #222;
+    border: 2px solid #0ff;
+    border-radius: 10px;
+}
+#score {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: clamp(18px, 5vw, 24px);
+    pointer-events: none;
+}
+Pas 3: JavaScript – Configuració del canvas i variables
+Definim la resolució interna del joc (480×700 píxels). La pala se situa a baix i la pilota al centre amb una velocitat inicial cap amunt. Tot es dibuixa sobre aquesta resolució fixa, mentre el CSS escala el canvas visualment.
+
+const GAME_WIDTH = 480;
+const GAME_HEIGHT = 700;
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+canvas.width = GAME_WIDTH;
+canvas.height = GAME_HEIGHT;
+
+const paddle = {
+    x: GAME_WIDTH / 2 - 50,
+    y: GAME_HEIGHT - 40,
+    width: 100,
+    height: 14,
+    speed: 7
+};
+
+const ball = {
+    x: GAME_WIDTH / 2,
+    y: GAME_HEIGHT / 2,
+    radius: 10,
+    dx: 4,
+    dy: -4
+};
+
+let score = 0;
+let gameRunning = true;
+let gameOver = false;
